@@ -6,12 +6,29 @@ output: html_document
 На этой страничке собраны различные парсеры на питоне. Я очень старался оформлять каждый из них как полноценный учебный материал, по которому можно пройтись и многое понять. Многие из них я не доделал в силу нехватки времени. Многие из них кривые. Сори. Когда-нибудь эта страничка заблистает новыми красками. 
 
 
-## Ссылки
+### Ссылки
 
 * [Свалка](https://github.com/FUlyankin/Parsers) разных файлов
 * [Прикольная книжка](https://github.com/FUlyankin/Parsers/raw/master/Ryan_Mitchell_Web_Scraping_with_Python-_Collecting_Data_from_the_Modern_Web_2015.pdf) про парсинг
 * [Прикольная книжка](https://github.com/FUlyankin/Parsers/raw/master/Python_Cookbook_3rd_Edition_proglib.pdf) про Python 
 * [Околочасовое видео](https://it.mail.ru/video/954/) с секции по парсерам на датафесте.
+
+
+* [__Лекция с 9 неделеи (РАНХ 2019)__](https://nbviewer.jupyter.org/github/FUlyankin/Parsers/blob/master/ranepa_lec_08_04_2019.ipynb)
+
+
+### Логи семинаров 2017 (РАНХ)
+
+* [Блокнот](http://nbviewer.jupyter.org/github/FUlyankin/Parsers/blob/master/sems/1_Python_intro.ipynb) с изучением питоньего синтаксиса
+
+**Грабим и исследуем ЦИАН:**
+
+* **Примечание:** ЦИАН ввёл капчу. Рано или поздно она выскакивает и приходится её обходить. Из-за этого эти блокноты не очень работают. Но текст в них хороший.
+* [Блокнот](http://nbviewer.jupyter.org/github/FUlyankin/Parsers/blob/master/sems/2_CIAN/2.1%20CIAN_parser.ipynb) с грабежом и разбоем ЦИАН
+* [Подключаемся к Google-maps](http://nbviewer.jupyter.org/github/FUlyankin/Parsers/blob/master/sems/2_CIAN/2.2%20CIAN_google_maps_API.ipynb) и берём себе данные!
+* Немножечко [распараллеливаем наш парсер.](http://nbviewer.jupyter.org/github/FUlyankin/Parsers/blob/master/sems/2_CIAN/2.3%20Parallel_CIAN.ipynb)
+* [Отмываем данные](http://nbviewer.jupyter.org/github/FUlyankin/Parsers/blob/master/sems/2_CIAN/2.4%20CIAN_clean_data.ipynb) от грязи 
+ 
 
 
 **Учимся обходить блокировки** 
@@ -38,24 +55,6 @@ output: html_document
 * [Google-maps](http://nbviewer.jupyter.org/github/FUlyankin/Parsers/blob/master/Parsers%20/Google_maps_API.ipynb)
 * [Google-trends](http://nbviewer.jupyter.org/github/FUlyankin/Parsers/blob/master/Parsers%20/google_trends_selenium_parser.ipynb)
 * [Разные СМИ](http://nbviewer.jupyter.org/github/FUlyankin/Parsers/blob/master/Parsers%20/News_parser/Парсер%20разных%20СМИ.ipynb) и их [лемматизация](http://nbviewer.jupyter.org/github/FUlyankin/Parsers/blob/master/Parsers%20/News_parser/Universal_lemmatizator.ipynb)
-
-
-
-* [__Лекция с 9 неделеи (РАНХ 2019)__](https://nbviewer.jupyter.org/github/FUlyankin/Parsers/blob/master/ranepa_lec_08_04_2019.ipynb)
-
-
-## Логи семинаров 2017 (РАНХ)
-
-* [Блокнот](http://nbviewer.jupyter.org/github/FUlyankin/Parsers/blob/master/sems/1_Python_intro.ipynb) с изучением питоньего синтаксиса
-
-**Грабим и исследуем ЦИАН:**
-
-* **Примечание:** ЦИАН ввёл капчу. Рано или поздно она выскакивает и приходится её обходить. Из-за этого эти блокноты не очень работают. Но текст в них хороший.
-* [Блокнот](http://nbviewer.jupyter.org/github/FUlyankin/Parsers/blob/master/sems/2_CIAN/2.1%20CIAN_parser.ipynb) с грабежом и разбоем ЦИАН
-* [Подключаемся к Google-maps](http://nbviewer.jupyter.org/github/FUlyankin/Parsers/blob/master/sems/2_CIAN/2.2%20CIAN_google_maps_API.ipynb) и берём себе данные!
-* Немножечко [распараллеливаем наш парсер.](http://nbviewer.jupyter.org/github/FUlyankin/Parsers/blob/master/sems/2_CIAN/2.3%20Parallel_CIAN.ipynb)
-* [Отмываем данные](http://nbviewer.jupyter.org/github/FUlyankin/Parsers/blob/master/sems/2_CIAN/2.4%20CIAN_clean_data.ipynb) от грязи 
- 
 
 
 Лицензия
