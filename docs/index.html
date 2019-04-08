@@ -69,9 +69,7 @@ h6 {
 </style>
 
 
-</head>
 
-<body>
 
 <style type="text/css">
 .main-container {
@@ -90,25 +88,98 @@ img {
 .tabbed-pane {
   padding-top: 12px;
 }
+.html-widget {
+  margin-bottom: 20px;
+}
 button.code-folding-btn:focus {
   outline: none;
+}
+summary {
+  display: list-item;
 }
 </style>
 
 
 
-<div class="container-fluid main-container">
-
 <!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
 <script>
 $(document).ready(function () {
   window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
 });
 </script>
 
 <!-- code folding -->
 
 
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
 
 
 
@@ -122,6 +193,7 @@ $(document).ready(function () {
 </div>
 
 
+<p>На этой страничке собраны различные парсеры на питоне. Я очень старался оформлять каждый из них как полноценный учебный материал, по которому можно пройтись и многое понять. Многие из них я не доделал в силу нехватки времени. Многие из них кривые. Сори. Когда-нибудь эта страничка заблистает новыми красками.</p>
 <div class="section level2">
 <h2>Ссылки</h2>
 <ul>
@@ -129,20 +201,6 @@ $(document).ready(function () {
 <li><a href="https://github.com/FUlyankin/Parsers/raw/master/Ryan_Mitchell_Web_Scraping_with_Python-_Collecting_Data_from_the_Modern_Web_2015.pdf">Прикольная книжка</a> про парсинг</li>
 <li><a href="https://github.com/FUlyankin/Parsers/raw/master/Python_Cookbook_3rd_Edition_proglib.pdf">Прикольная книжка</a> про Python</li>
 <li><a href="https://it.mail.ru/video/954/">Околочасовое видео</a> с секции по парсерам на датафесте.</li>
-</ul>
-</div>
-<div id="-" class="section level2">
-<h2>Логи семинаров</h2>
-<ul>
-<li><a href="http://nbviewer.jupyter.org/github/FUlyankin/Parsers/blob/master/sems/1_Python_intro.ipynb">Блокнот</a> с изучением питоньего синтаксиса</li>
-</ul>
-<p><strong>Грабим и исследуем ЦИАН:</strong></p>
-<ul>
-<li><strong>Примечание:</strong> Не так давно ЦИАН ввёл капчу. Рано или поздно она выскакивает и приходится её обходить.</li>
-<li><a href="http://nbviewer.jupyter.org/github/FUlyankin/Parsers/blob/master/sems/2_CIAN/2.1%20CIAN_parser.ipynb">Блокнот</a> с грабежом и разбоем ЦИАН</li>
-<li><a href="http://nbviewer.jupyter.org/github/FUlyankin/Parsers/blob/master/sems/2_CIAN/2.2%20CIAN_google_maps_API.ipynb">Подключаемся к Google-maps</a> и берём себе данные!</li>
-<li>Немножечко <a href="http://nbviewer.jupyter.org/github/FUlyankin/Parsers/blob/master/sems/2_CIAN/2.3%20Parallel_CIAN.ipynb">распараллеливаем наш парсер.</a></li>
-<li><a href="http://nbviewer.jupyter.org/github/FUlyankin/Parsers/blob/master/sems/2_CIAN/2.4%20CIAN_clean_data.ipynb">Отмываем данные</a> от грязи</li>
 </ul>
 <p><strong>Учимся обходить блокировки</strong></p>
 <ul>
@@ -165,9 +223,24 @@ $(document).ready(function () {
 <li><a href="http://nbviewer.jupyter.org/github/FUlyankin/Parsers/blob/master/Parsers%20/Результаты%20Выборов/Фальсификации%2C%20выборы.ipynb">ЦИК и выборы</a></li>
 <li><a href="http://nbviewer.jupyter.org/github/FUlyankin/Parsers/blob/master/Parsers%20/Google_maps_API.ipynb">Google-maps</a></li>
 <li><a href="http://nbviewer.jupyter.org/github/FUlyankin/Parsers/blob/master/Parsers%20/google_trends_selenium_parser.ipynb">Google-trends</a></li>
-<li><a href="http://nbviewer.jupyter.org/github/FUlyankin/Parsers/blob/master/Parsers%20/News_parser/Парсер%20разных%20СМИ.ipynb">Разные СМИ</a> и их <a href="http://nbviewer.jupyter.org/github/FUlyankin/Parsers/blob/master/Parsers%20/News_parser/Universal_lemmatizator.ipynb">лемматизация</a></li>
+<li><p><a href="http://nbviewer.jupyter.org/github/FUlyankin/Parsers/blob/master/Parsers%20/News_parser/Парсер%20разных%20СМИ.ipynb">Разные СМИ</a> и их <a href="http://nbviewer.jupyter.org/github/FUlyankin/Parsers/blob/master/Parsers%20/News_parser/Universal_lemmatizator.ipynb">лемматизация</a></p></li>
+<li><p><a href="https://nbviewer.jupyter.org/github/FUlyankin/Parsers/blob/master/ranepa_lec_08_04_2019.ipynb"><strong>Лекция с 9 неделеи (РАНХ 2019)</strong></a></p></li>
 </ul>
 </div>
+</div>
+<div id="--2017-" class="section level2">
+<h2>Логи семинаров 2017 (РАНХ)</h2>
+<ul>
+<li><a href="http://nbviewer.jupyter.org/github/FUlyankin/Parsers/blob/master/sems/1_Python_intro.ipynb">Блокнот</a> с изучением питоньего синтаксиса</li>
+</ul>
+<p><strong>Грабим и исследуем ЦИАН:</strong></p>
+<ul>
+<li><strong>Примечание:</strong> ЦИАН ввёл капчу. Рано или поздно она выскакивает и приходится её обходить. Из-за этого эти блокноты не очень работают. Но текст в них хороший.</li>
+<li><a href="http://nbviewer.jupyter.org/github/FUlyankin/Parsers/blob/master/sems/2_CIAN/2.1%20CIAN_parser.ipynb">Блокнот</a> с грабежом и разбоем ЦИАН</li>
+<li><a href="http://nbviewer.jupyter.org/github/FUlyankin/Parsers/blob/master/sems/2_CIAN/2.2%20CIAN_google_maps_API.ipynb">Подключаемся к Google-maps</a> и берём себе данные!</li>
+<li>Немножечко <a href="http://nbviewer.jupyter.org/github/FUlyankin/Parsers/blob/master/sems/2_CIAN/2.3%20Parallel_CIAN.ipynb">распараллеливаем наш парсер.</a></li>
+<li><a href="http://nbviewer.jupyter.org/github/FUlyankin/Parsers/blob/master/sems/2_CIAN/2.4%20CIAN_clean_data.ipynb">Отмываем данные</a> от грязи</li>
+</ul>
 </div>
 <div class="section level2">
 <h2>Лицензия</h2>
